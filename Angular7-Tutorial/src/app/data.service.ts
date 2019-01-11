@@ -11,4 +11,8 @@ export class DataService {
   getUsers() {
     return this.http.get('https://reqres.in/api/users');
     }
+
+  blueEyedElephant(){
+    return this.http.get('https://i.ytimg.com/vi/XMO4vXKGKG8/maxresdefault.jpg')
+    }
 }
