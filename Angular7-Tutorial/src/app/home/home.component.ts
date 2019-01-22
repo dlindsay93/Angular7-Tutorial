@@ -9,7 +9,9 @@ import {DataService} from '../data.service';
 export class HomeComponent implements OnInit {
 
   users:Object;
-  h1Style: boolean = false;
+  h1Style:boolean = false;
+  homeTitle: string = "Home";
+  betterElephant: Object;
 
   constructor(private data: DataService) { }
 
@@ -18,8 +20,11 @@ export class HomeComponent implements OnInit {
       this.users = data
       console.log(this.users)
     });
-  }
+
+    }
   firstClick(){
     this.data.getUsers();
+    this.h1Style = true;
+    this.homeTitle = "We can make things better than real"
     }
 }
