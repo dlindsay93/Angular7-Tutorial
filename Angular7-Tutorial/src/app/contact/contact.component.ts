@@ -22,7 +22,7 @@ onSubmit(){
   this.submitted = true;
 
   if (this.messageForm.invalid){
-    return console.log( 'Go fuck yourself')
+    return console.log( 'Invalid')
   }
 
   this.success = true;
